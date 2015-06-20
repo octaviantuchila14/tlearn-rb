@@ -7,6 +7,9 @@
 #include <math.h>
 #define MAX_PARSE_BUF 4096
 
+void get_str(fp,buf,str);
+void get_nums(str,nv,offset,vec);
+void parse_err();
 
 char	pbuf[MAX_PARSE_BUF];	/* retains all strings parsed so far */
 char	nbuf[80];	/* shows string in get_nums */
